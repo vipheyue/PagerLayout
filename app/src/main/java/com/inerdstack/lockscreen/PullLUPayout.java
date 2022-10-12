@@ -22,11 +22,11 @@ import android.widget.TextView;
  * 3. 锁屏时禁止下拉，只允许上拉
  * 4. 设置下拉锁屏
  */
-public class PagerLayout extends LinearLayout {
-    
+public class PullLUPayout extends LinearLayout {
+
     private Scroller mScroller;
     private GestureDetector mGestureDetector;
-    
+
     // 视图容器
     private View mContainer;
 
@@ -39,15 +39,15 @@ public class PagerLayout extends LinearLayout {
     // 视图高度
     private int mViewHeight = 0;
 
-    public PagerLayout(Context context) {
+    public PullLUPayout(Context context) {
         this(context, null);
     }
 
-    public PagerLayout(Context context, AttributeSet attrs) {
+    public PullLUPayout(Context context, AttributeSet attrs) {
         this(context, attrs, 0);
     }
 
-    public PagerLayout(final Context context, AttributeSet attrs, int defStyleAttr) {
+    public PullLUPayout(final Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
 
         // 填充视图

@@ -3,16 +3,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/holo_red_dark"
+    android:background="@android:color/black"
     tools:context="com.inerdstack.lockscreen.MainActivity">
 
-    <com.jcodecraeer.xrecyclerview.XRecyclerView
-        android:id="@+id/xrecyclerview"
+    <FrameLayout
+        android:id="@+id/frv_face_view"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent">
 
-    <com.inerdstack.lockscreen.PagerLayout
+    </FrameLayout>
+
+    <com.inerdstack.lockscreen.PullLayout
         android:id="@+id/lock_view"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent" />
+
 </RelativeLayout>
